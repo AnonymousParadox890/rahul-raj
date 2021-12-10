@@ -1,6 +1,7 @@
 body{
   background:#363940 ;
   text-align: center ;
+  overflow-y:hidden;
 }
 .list {
   list-style: none ;
@@ -11,6 +12,7 @@ body{
   height: 10vh;
   position: fixed ;
   bottom:0;
+  z-index: 5;
   width: 85%;
   border-radius:20px ;
 }
@@ -25,16 +27,6 @@ body{
   color:aqua ;
   background: #141318;
   
-}
-.list-item a{
-  color:white ;
-  outline: none ;
-  border: none;
-  -webkit-tap-highlight-color: transparent;
-}
-.list-item a:hover{
-  color:#FE7CE9 ;
-  background: #141318;
 }
 .card{
   flex-basis:70%;
@@ -191,19 +183,6 @@ body.light-mode{
   color:black;
   background: #F5F5F5 ;
 }
-.light-mode .list-item a{
-  color:grey;
-  outline: none ;
-  border: none;
-  -webkit-tap-highlight-color: transparent;
-}
-.light-mode .list-item a:hover{
-  background:#F5F5F5;
-  color:black;
-  outline: none ;
-  border: none;
-  -webkit-tap-highlight-color: transparent;
-}
 .light-mode .card{
   background:white;
 } 
@@ -222,4 +201,26 @@ body.light-mode{
 }
 .light-mode #ul{
   color:black;
+}
+#show_bg_2 {
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.2), rgba(0,0, 0, 0.8)),
+    url('instawhite.jpg');
+    width: 90%;
+    height: 480px;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    border-radius:20px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+}
+
+#hi{
+  position: relative ;
+  top:-160px;
+  font-family: 'Montserrat', sans-serif;
+  color:white;
+  left:-30px;
+  font-size:40px;
 }
