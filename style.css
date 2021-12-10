@@ -1,0 +1,225 @@
+body{
+  background:#363940 ;
+  text-align: center ;
+}
+.list {
+  list-style: none ;
+  display: flex ;
+  justify-content: space-around ;
+  align-items: center ;
+  background :#23232D ;
+  height: 10vh;
+  position: fixed ;
+  bottom:0;
+  width: 85%;
+  border-radius:20px ;
+}
+.list-item{
+  color:white ;
+  position:relative ;
+  padding: 14px 16px;
+  left:-7%;
+  transition: 0.1s linear ;
+}
+.list-item:hover{
+  color:aqua ;
+  background: #141318;
+  
+}
+.list-item a{
+  color:white ;
+  outline: none ;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.list-item a:hover{
+  color:#FE7CE9 ;
+  background: #141318;
+}
+.card{
+  flex-basis:70%;
+  background:#363940;
+  border-radius:15px;
+  width: 100%;
+  height: 500px ;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  transition:0.3s linear ;
+}
+.card:hover{
+  transform:translateY(10px); 
+}
+.card-title{
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  width:100%;
+  height:250px;
+  background:linear-gradient( to right, rgba(0,0,0, 0.7), rgba(0,0,0, 0.1)), url('rahul.jpg');
+  background-size: cover;
+  clip-path:polygon(0% 0%,100% 0%, 100% 80%, 0% 100%)
+}
+.sel{
+  width:60px;
+  border-radius:50%;
+  border: 10px solid #363940;
+  position:relative;
+  left:-27%;
+  bottom: 12%;
+}
+#name{
+  font-family: 'Work Sans', sans-serif;
+  font-size:25px;
+  position: relative ;
+  left:-27%;
+  bottom:16%;
+  color:white;
+}
+.fname{
+  position: relative ;
+  left:-27%;
+  bottom:60%;
+  color:white;
+  opacity:0.7;
+}
+.fline{
+  width:30%;
+  height:1px;
+  background:grey;
+  position: relative ;
+  left:8%;
+  bottom:15%;
+}
+.cardin{
+  width: 50%;
+  height: 220px;
+  position: relative ;
+  left:50%;
+  bottom:30%;
+  clip-path:polygon(0% 10%,100% 0%, 100% 100%, 0% 100%);
+  background :#23232D;
+  color:white ;
+  transition:0.3s ease-in ;
+}
+.cardin h4{
+  position:relative;
+  top:10%;
+  padding: 2px;
+  font-family: 'Work Sans', sans-serif;
+}
+#slo{
+  width:25%;
+  position: relative ;
+  top:15%;
+  border-radius:50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+.line{
+  width: 70%;
+  background: grey;
+  height: 1px;
+  position: relative ;
+  left:15%;
+  bottom:-30px;
+}
+#ul{
+  list-style: none ;
+  position: relative ;
+  left:-10%;
+  top:20%;
+  display: flex ;
+  justify-content: space-around ;
+  color:white;
+}
+.dis:hover{
+  color:#5865F1;
+  transition:0.1s linear ;
+}
+.insta:hover{
+  opacity:0.4;
+  transition:0.1s linear ;
+}
+.fb:hover{
+  color:#0D8CF0;
+  transition:0.1s linear ;
+}
+@media only screen and (min-width: 768px){
+.list{
+  width: 90%;
+  left:3%;
+}
+.list-item{
+  left:-3%;
+}
+.card{
+  height: 700px;
+}
+.cardin{
+  top:-17%;
+  height:350px;
+}
+#ul{
+  left:-4%;
+}
+.sel{
+  bottom:12%;
+  width:10%;
+}
+#name{
+  top:-12%;
+}
+.fline{
+  top:-5%;
+}
+.fname{
+  top:-50%;
+}
+}
+body.light-mode{
+  background: white;
+  color: black ;
+}
+.light-mode .list {
+  background: white ;
+  z-index:5;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.light-mode .list-item{
+  color:grey ;
+  background: white;
+}
+.light-mode .list-item:hover{
+  color:black;
+  background: #F5F5F5 ;
+}
+.light-mode .list-item a{
+  color:grey;
+  outline: none ;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.light-mode .list-item a:hover{
+  background:#F5F5F5;
+  color:black;
+  outline: none ;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.light-mode .card{
+  background:white;
+} 
+.light-mode .fname{
+  color:black;
+}
+.light-mode #name{
+  color:black;
+}
+.light-mode .sel{
+  border: 10px solid white; 
+}
+.light-mode .cardin{
+  background:#F5F5F5;
+  color:black;
+}
+.light-mode #ul{
+  color:black;
+}
