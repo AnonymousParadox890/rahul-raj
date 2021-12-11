@@ -134,38 +134,6 @@ body{
   color:#0D8CF0;
   transition:0.1s linear ;
 }
-@media only screen and (min-width: 768px){
-.list{
-  width: 90%;
-  left:3%;
-}
-.list-item{
-  left:-3%;
-}
-.card{
-  height: 700px;
-}
-.cardin{
-  top:-17%;
-  height:350px;
-}
-#ul{
-  left:-4%;
-}
-.sel{
-  bottom:12%;
-  width:10%;
-}
-#name{
-  top:-12%;
-}
-.fline{
-  top:-5%;
-}
-.fname{
-  top:-50%;
-}
-}
 body.light-mode{
   background: white;
   color: black ;
@@ -334,3 +302,53 @@ nav {
      .animate{
        color:white;
      }
+     @media only screen and (min-width: 768px){
+.list{
+  width: 90%;
+  left:3%;
+}
+.list-item{
+  left:-3%;
+}
+.card{
+  height: 700px;
+}
+.cardin{
+  top:-17%;
+  height:350px;
+}
+#ul{
+  left:-4%;
+}
+.sel{
+  bottom:12%;
+  width:10%;
+}
+#name{
+  top:-12%;
+}
+.fline{
+  top:-5%;
+}
+.fname{
+  top:-50%;
+}
+.carda{
+  height:700px;
+  width: 95%;
+  position: relative ;
+ 
+}
+.cardaa{
+  width:90%;
+  height: 680px;
+}
+.carda img{
+  height:660px;
+  position: relative ;
+  top:-650px;
+}
+#animt{
+  bottom:350px;
+}
+} 
