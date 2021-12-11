@@ -51,11 +51,12 @@ body{
 }
 .sel{
   width:70px;
+  height: 75px ;
   border-radius:50%;
   border: 10px solid #363940;
   position:relative;
   left:-27%;
-  bottom: 10%;
+  top:-60px;
 }
 #name{
   font-family: 'Work Sans', sans-serif;
@@ -321,11 +322,17 @@ nav {
   left:-4%;
 }
 .sel{
-  bottom:12%;
+  top:-70px;
   width:10%;
+  height:100px;
+ 
 }
 #name{
   top:-12%;
+}
+#slo{
+  height:120px ;
+  top:40px;
 }
 .fline{
   top:-5%;
@@ -334,19 +341,19 @@ nav {
   top:-50%;
 }
 .carda{
-  height:700px;
+  height:750px;
   width: 95%;
   position: relative ;
  
 }
 .cardaa{
   width:90%;
-  height: 680px;
+  height: 730px;
 }
 .carda img{
-  height:660px;
+  height:710px;
   position: relative ;
-  top:-650px;
+  top:-700px;
 }
 #animt{
   bottom:350px;
