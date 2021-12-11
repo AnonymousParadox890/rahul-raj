@@ -5,7 +5,6 @@ const showAlert = () => {
     icon: "error",
   });
 }
-
 const ChangeBackground = () => {
 var element = document.body;
   element.classList.toggle("light-mode"); 
