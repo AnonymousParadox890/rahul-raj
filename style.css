@@ -100,6 +100,7 @@ body{
 }
 #slo{
   width:25%;
+  height:50px ;
   position: relative ;
   top:15%;
   border-radius:50%;
@@ -331,7 +332,7 @@ nav {
   top:-12%;
 }
 #slo{
-  height:120px ;
+  height:120px;
   top:40px;
 }
 .fline{
@@ -358,4 +359,13 @@ nav {
 #animt{
   bottom:350px;
 }
-} 
+}
+#chnzz .brightness{
+  display:none;
+}
+.light-mode #chnzz .moon{
+  display: none;
+}
+.light-mode #chnzz .brightness{
+  display: block ;
+}
