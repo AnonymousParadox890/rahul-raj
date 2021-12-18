@@ -30,6 +30,7 @@ body{
 }
 .card{
   flex-basis:70%;
+  z-index:3;
   background:#363940;
   border-radius:15px;
   width: 100%;
@@ -368,4 +369,17 @@ nav {
 }
 .light-mode #chnzz .brightness{
   display: block ;
+}
+.triangle-up {
+  width:200px;
+  z-index:5;
+  position: relative;
+  top:-610px;
+  left:-140px;
+  height:200px;
+  background: black;
+  transform: rotateZ(135deg);
+  border: 1px solid red;
+  
+
 }

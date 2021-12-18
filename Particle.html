@@ -19,6 +19,38 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Meow+Script&family=Open+Sans:wght@300&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
+<style>
+        body{
+          background: black;
+        }
+        canvas {
+            position: fixed;
+            left: 0;
+            top: 0;
+            height:600px;
+            width:100%;
+        }
+        button {
+            z-index: 999;
+            position: absolute;
+            left:0;
+            user-select: none;
+            background: transparent;
+            border: 1px solid red;
+            color:red;
+            border-radius: 4px;
+            -webkit-user-select: none;
+        }
+        button:active{
+          background: red;
+          color: black;
+        }
+        @media only screen and (min-width: 768px){
+          canvas{
+            height:1400px;
+          }
+        }
+    </style>
 
 <body>
  <ul id="hol" class="list">
@@ -30,14 +62,14 @@
   <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z" />
   <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z" />
 </svg></li>
-    <li onclick="" id="chn" class="list-item"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+    <li onclick="location.href='insta.html'" id="chn" class="list-item"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
   <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
 </svg> </li>
-    <li style="opacity: 0.5" onclick="showAlert()" id="chnz" class="list-item"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope-check-fill" viewBox="0 0 16 16">
+    <li style="opacity:0.5" onclick="" id="chnz" class="list-item"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope-check-fill" viewBox="0 0 16 16">
   <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207L16 4.697Z"/>
   <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z"/>
 </svg> </li>
-    <li onclick="ChangeBackground()" id="chnzz" class="list-item"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="brightness" viewBox="0 0 16 16">
+    <li style="opacity:0.5" onclick="" id="chnzz" class="list-item"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="brightness" viewBox="0 0 16 16">
   <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
   <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
 </svg>
@@ -47,14 +79,169 @@
 </svg>
     </li>
   </ul>
-  <div class="ins">
-   
-  <div id='show_bg_2'></div>
-   <h6 id="hi">Instagram Profile</h6>
-  </div>
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <script src="main.js"></script>
+  <main>
+    <canvas></canvas>
+    <button onclick="randomize()">Reset</button>
+    <script>
+
+        let c, ctx, mouse, particles = [];
+
+
+        const Particle = function(x, y, col) {
+            this.x0 = x;
+            this.y0 = y;
+            this.col = col;
+            this.x = x;
+            this.y = y;
+            this.size = 3;
+            this.speed = Math.random() * 2 + 4;
+        };
+        Particle.prototype = {
+            draw: function() {
+                ctx.beginPath();
+                ctx.fillStyle = this.col;
+                ctx.arc(this.x, this.y, this.size / 2, 0, Math.PI * 2);
+                ctx.fill();
+            },
+            update: function() {
+                const dx = mouse.x - this.x;
+                const dy = mouse.y - this.y;
+                const dist = Math.hypot(dx, dy);
+                
+                const force = (mouse.radius - dist) / mouse.radius;
+                const vx = dx / dist * force * this.speed;
+                const vy = dy / dist * force * this.speed;
+
+                if(dist < mouse.radius) {
+                    this.x -= vx;
+                    this.y -= vy;
+                } else {
+                    if(this.x !== this.x0) {
+                        const dx = this.x0 - this.x;
+                        this.x += dx / 10;
+                    }
+                    if(this.y !== this.y0) {
+                        const dy = this.y0 - this.y;
+                        this.y += dy / 10;
+                    }
+                }
+            }
+        };
+        
+    onload = function() {
+        
+        c = document.querySelector("canvas");
+        c.width = innerWidth;
+        c.height = innerHeight;
+        ctx = c.getContext("2d");
+
+        mouse = {
+            x: -999,
+            y: 0,
+            radius: 50
+        };
+
+        addEventListener("ontouchstart" in document ? "touchmove" : "mousemove", handleMousemove);
+        addEventListener("ontouchstart" in document ? "touchstart" : "mousedown", handleMousemove);
+        addEventListener("ontouchstart" in document ? "touchend" : "mouseup", function() { mouse.x = -999; });
+
+        const grd = ctx.createLinearGradient(c.width / 2 - 10, 0, c.width / 2 + 10, 0);
+        grd.addColorStop(0, "#611");
+        grd.addColorStop(0.5, "#f33");
+        grd.addColorStop(1, "#611");
+
+        ctx.beginPath();
+        ctx.fillStyle = grd;
+        ctx.font = "10px Arial";
+        ctx.textBaseline = "middle";
+        ctx.textAlign = "center";
+        ctx.fillText("Rahul", c.width / 2, c.height / 2 - 10);
+
+        ctx.beginPath();
+        ctx.fillStyle = grd;
+        ctx.font = "20px Arial";
+        ctx.textBaseline = "middle";
+        ctx.textAlign = "center";
+        ctx.fillText("Raj", c.width / 2, c.height / 2 + 10);
+
+        
+        init();
+        loop();
+        randomize();
+    }
+
+        function init() {
+            const imgData = ctx.getImageData(0, 0, c.width, c.height).data;
+            const scale = 7;
+            for(let i = 0; i < imgData.length; i += 4) {
+                const red = imgData[i];
+                const green = imgData[i + 1];
+                const blue = imgData[i + 2];
+                if(red + green + blue > 0) {
+                    const x = (i / 4) % c.width;
+                    const y = Math.floor((i / 4) / c.width);
+                    const col = `rgb(${red},${green},${blue})`;
+                    particles.push(new Particle((x - c.width / 2) * scale + c.width / 2, (y - c.height / 2) * scale + c.height / 2, col));
+                }
+            }
+        }
+
+        function loop() {
+
+            ctx.beginPath();
+            ctx.fillStyle = "black";
+            ctx.fillRect(0, 0, c.width, c.height);
+
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+            connect();
+            
+            ctx.beginPath();
+            ctx.fillStyle = "white";
+            ctx.arc(mouse.x, mouse.y, 2, 0, Math.PI * 2);
+            ctx.fill();
+
+            requestAnimationFrame(loop);
+        }
+
+        function handleMousemove(e) {
+            if(e.changedTouches) e = e.changedTouches[0];
+            mouse.x = e.pageX - c.offsetLeft;
+            mouse.y = e.pageY - c.offsetTop - ("ontouchstart" in document ? 100 : 0);
+        }
+
+        function connect() {
+            const maxDist = 12;
+            for(let i = 0; i < particles.length - 1; ++i) {
+                for(let j = i + 1; j < particles.length; ++j) {
+                    const p1 = particles[i];
+                    const p2 = particles[j];
+                    const dist = Math.hypot(p1.x - p2.x, p1.y - p2.y);
+                    
+                    if(dist < maxDist) {
+                        const col = p1.col;
+                        ctx.beginPath();
+                        ctx.strokeStyle = col;
+                        ctx.moveTo(p1.x, p1.y);
+                        ctx.lineTo(p2.x, p2.y);
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        function randomize() {
+            particles.forEach(p => {
+                p.x = Math.random() * c.width;
+                p.y = Math.random() * c.height;
+            });
+        }
+    </script>
+  </main>
   </div>
 </body>
+<script src="main.js"></script>
 
 </html>
