@@ -1,6 +1,6 @@
 const showAlert = () => {
   Swal.fire({
-    title: "Unlocking on <br> ${Rahul's bday}",
+    title: "Unlocking on <br> <span style='color:#F9CEA9'>23rd Feb</span>",
     text: "",
     icon: 'warning',
     showCancelButton: true,
