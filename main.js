@@ -23,7 +23,7 @@ var element = document.body;
 }
 const showMsg = () => {
   Swal.fire({
-    title: 'Pray for him to join Discord 🙏',
+    title: 'Pray for him to join <span style="color:#5865F2">Discord</span> 🙏',
     showDenyButton: true,
     showCancelButton: true,
     confirmButtonText: 'Pray 🙏',
