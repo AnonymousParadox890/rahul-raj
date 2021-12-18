@@ -17,10 +17,6 @@ const showAlert = () => {
     }
   })
 }
-const ChangeBackground = () => {
-var element = document.body;
-  element.classList.toggle("light-mode"); 
-}
 const showMsg = () => {
   Swal.fire({
     title: 'Pray for him to join <span style="color:#5865F2">Discord</span> 🙏',
@@ -36,4 +32,8 @@ const showMsg = () => {
       Swal.fire("Your sins 're increasing 😡", '', 'info')
     }
   })
+}
+const ChangeBackground = () => {
+  var element = document.body;
+  element.classList.toggle("light-mode");
 }
