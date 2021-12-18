@@ -1,18 +1,39 @@
 const showAlert = () => {
-  swal({
-    title: "@rio_rahul",
-    text: "Tumhara b'day ke din khulega ;)",
-    icon: "error",
-  });
+  Swal.fire({
+    title: "Unlocking on <br> ${Rahul's bday}",
+    text: "",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'OK'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire(
+        'Thx for waiting',
+        '',
+        'success'
+      )
+    }
+  })
 }
 const ChangeBackground = () => {
 var element = document.body;
   element.classList.toggle("light-mode"); 
 }
 const showMsg = () => {
-  swal({
-    title:"@rio_rahul",
-    text:"Phele Join toh kro\nTab na link dunga :D", 
-    icon:"success"
+  Swal.fire({
+    title: 'Pray for him to join Discord 🙏',
+    showDenyButton: true,
+    showCancelButton: true,
+    confirmButtonText: 'Pray 🙏',
+    denyButtonText: `Deny`,
+  }).then((result) => {
+    /* Read more about isConfirmed, isDenied below */
+    if (result.isConfirmed) {
+      Swal.fire('+1 <br>Your pray has been counted.', '', 'success')
+    } else if (result.isDenied) {
+      Swal.fire("Your sins 're increasing 😡", '', 'info')
+    }
   })
 }

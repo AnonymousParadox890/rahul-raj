@@ -9,7 +9,7 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Meow+Script&family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
-    
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
     <title></title>
 </head>
 
@@ -31,7 +31,7 @@
 </svg> Styled Page</a> 
             <a style="opacity:0.5" href="#"></a>
             <a href="insta.html">Instagram</a>
-            <a href="#" style="opacity:0.5">Contact</a>
+            <a onclick="showAlert()" href="#" style="opacity:0.5">Contact</a>
             <a style="opacity:0.5" href="#">Theme</a>
         </div>
         </div>
@@ -43,6 +43,7 @@
     </div>
      <h2 id="animt">I'm a <span class="animate"></span></h2>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
     <script src="main.js"></script>
     <script>
   var typed = new Typed('.animate', {
