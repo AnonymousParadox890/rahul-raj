@@ -31,7 +31,7 @@ const showMsg = () => {
   }).then((result) => {
     /* Read more about isConfirmed, isDenied below */
     if (result.isConfirmed) {
-      Swal.fire('+1 <br>Your pray has been counted.', '', 'success')
+      Swal.fire('<span style="color:#A4DC85">+1</span><br>Your pray has been counted.', '', 'success')
     } else if (result.isDenied) {
       Swal.fire("Your sins 're increasing 😡", '', 'info')
     }
