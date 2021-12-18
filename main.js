@@ -1,7 +1,7 @@
 const showAlert = () => {
   swal({
     title: "@rio_rahul",
-    text: "Phele discord join kro\nVhir :P",
+    text: "Tumhara b'day ke din khulega ;)",
     icon: "error",
   });
 }
