@@ -419,6 +419,7 @@ nav {
   height: 500px;
   position: relative;
   top:30px;
+  left:-100px;
   border-radius: 20px;
   width:385px;
   text-align: center;
