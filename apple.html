@@ -2,69 +2,66 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-    <link rel="stylesheet" href="style.css" title="" type="" />
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Meow+Script&family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
-    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
-    <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <link rel="stylesheet" href="style.css" title="" type="" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Meow+Script&family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+  <title></title>
 </head>
 
 <body style="margin:0;padding:0;background:white">
- <nav>
-       <div class="header">
-        <div class="icon" align="right">
-            <div class="bar-1"></div>
-            <div class="bar-2"></div>
-        </div>
-        <div align="center">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAdVBMVEUAAAD///+goKD09PTk5OTZ2dns7OyZmZnw8PCNjY3W1tbExMT39/cgICCvr6+VlZXMzMxXV1e1tbVra2saGhrg4OB4eHg1NTU8PDy8vLykpKROTk5DQ0MPDw9/f39fX18uLi5ycnJISEgcHBwnJyd8fHxcXFyEZr2SAAAEgUlEQVR4nO2c23qiMBSFCeIB0MGith5aq5227/+IUzxUkaDOdO+sTL71X3OxF4RkHxNFhBBCCCGEEEIIIYQQQgghhBBCCCGEEELEmcR5skYboUfaNRVLtB1KPOfmwC+0KSrMM2OCVrgwZ8Roa+SZmBop2h5xyrpAM0EbJE1yIdA8oS2SZTS8FGjQJskyaugzGdomWZpf0PTRNonS+Ae/mKONkuRyF63ooY2SZGIRGNYitQkMaie1rVGzQFslyJP1E76jzRJkbBNYoq0SxP4J0VZJsrAJDCqBYRMYlMO2Dn2NWveZFdooUSwCP9A2ifLQFBhY8qIIXWDzrAguOZPV9Q02aIPEqYe+IeaAB2f6ukFF9UdOCrMHtC06HFZpEocULdWIx3nZD27/DJG3bdqP++lkc8/D0+1yPBsMh4NZtlg++p/aH6X5+X6ZFddNfi3Pn94xTl8c2fovFJZUb691V/m0RsPVOeJpRPyUtxhstXgad9oer/CwXDpq1bejrB/vk+zq0xUFSEgby5sWJ8Xx/1r9uvlwxcCnyHje2C/sIst0XeSWulML/vSfpHfb/Jd00coOXP8Df0RnihZX0dUTaMxwhJZnr3ZKSkTri2a6AvGlU2udRZYxVODtY1AA5Nn/6kIgtG7jQt8MqM/FT4jNx7lYo9iU+H3O6I/YQgWqeaMnHqECbb1pwoCrNtZqrijoBo2etsAELHClLdCgo4q2PJkY8NKptkD0GtU/7eGlKWuDoSD4DI32TvqKFviiLHCAFhhtlRXie6K1Y3t8ifh22eFHoLNPkXrghPZII/XzHhw1fbFRVoivdX8qK0Tri6JHXYEdtD71BAbc646ivq5CvFOqfeB70LuvrDD8bwhN5DtR6IHTFusq9OA8VN5LPVCondCHJ2m0fRp8JlHdL83RAlvGJOXAt5io54PxTXvaCvGzJup9QmiBms16e+B5DG2nBu+4Wa+2EAXbo2C9QUcYeCZDv00B3QLtoB3qGatQfauBr1Ntz7QCnK5xoBB8aY1y9WkP1HnTDvP3IItQcycKoU3eV0fP5ACO7Gv3m3wDS2lYLvFQYoYa3Nd33L5ZYLr47psiFAIykfDsUiFmoar30J4ABcTN63TUQPVIuVOIGtFX7xM+AvNsnO01uLtCVAdkTwBjYf2U2w5kKcrNgQEUqF5I3IG9I8PFR4QKdPEnoq85UR7HN+hP6GD+CV/TVy604ecStEcv4KMlkXKIgb1Q4YjmZuPHvV+KvSf4bWaP2jr1oNH0gFZrhh9rtGKqI9CnW6JVPHA/9tEjCgkND5rbasjPeuF72+qIj0LhhywvEY6j/PoJ94i2Z3jgcFuQjDK8uGuviVz3grdXfUtJfEMLaedaM1gnLybPv78e2jysy6vxiLdfsKKtbNrrX06+rtsS5j1P/8EjW5vRufX0fre+Dg/muG/wcrlSh1fSgellvjXxzZOxsjrXmN+oG63Ks8acsQ9ZmftYL7pJki2KuwaYNh9xmedl//+RRwghhBBCCCGEEEIIIYQQQgghhBBCCCEY/gAuDkAoLCKZGwAAAABJRU5ErkJggg==" alt="">
-        </div>
-        <div class="links" align="center">
-            <a href="index.html">Home</a>
-            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
-  <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"/>
-  <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"/>
-</svg> Styled Page</a> 
-            <a style="opacity:0.5" href="#"></a>
-            <a href="insta.html">Instagram</a>
-            <a onclick="location.href='about.html'" href="#" style="">About me</a>
-            <a style="opacity:0.5" href="#">Theme</a>
-        </div>
-        </div>
-    </nav>
-    <div class="carda">
-      <div class="cardaa"></div>
-        <img src="apple.jpg">
-     
+  <nav>
+    <div class="header">
+      <div class="icon" align="right">
+        <div class="bar-1"></div>
+        <div class="bar-2"></div>
+      </div>
+      <div align="center">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAdVBMVEUAAAD///+goKD09PTk5OTZ2dns7OyZmZnw8PCNjY3W1tbExMT39/cgICCvr6+VlZXMzMxXV1e1tbVra2saGhrg4OB4eHg1NTU8PDy8vLykpKROTk5DQ0MPDw9/f39fX18uLi5ycnJISEgcHBwnJyd8fHxcXFyEZr2SAAAEgUlEQVR4nO2c23qiMBSFCeIB0MGith5aq5227/+IUzxUkaDOdO+sTL71X3OxF4RkHxNFhBBCCCGEEEIIIYQQQgghhBBCCCGEEELEmcR5skYboUfaNRVLtB1KPOfmwC+0KSrMM2OCVrgwZ8Roa+SZmBop2h5xyrpAM0EbJE1yIdA8oS2SZTS8FGjQJskyaugzGdomWZpf0PTRNonS+Ae/mKONkuRyF63ooY2SZGIRGNYitQkMaie1rVGzQFslyJP1E76jzRJkbBNYoq0SxP4J0VZJsrAJDCqBYRMYlMO2Dn2NWveZFdooUSwCP9A2ifLQFBhY8qIIXWDzrAguOZPV9Q02aIPEqYe+IeaAB2f6ukFF9UdOCrMHtC06HFZpEocULdWIx3nZD27/DJG3bdqP++lkc8/D0+1yPBsMh4NZtlg++p/aH6X5+X6ZFddNfi3Pn94xTl8c2fovFJZUb691V/m0RsPVOeJpRPyUtxhstXgad9oer/CwXDpq1bejrB/vk+zq0xUFSEgby5sWJ8Xx/1r9uvlwxcCnyHje2C/sIst0XeSWulML/vSfpHfb/Jd00coOXP8Df0RnihZX0dUTaMxwhJZnr3ZKSkTri2a6AvGlU2udRZYxVODtY1AA5Nn/6kIgtG7jQt8MqM/FT4jNx7lYo9iU+H3O6I/YQgWqeaMnHqECbb1pwoCrNtZqrijoBo2etsAELHClLdCgo4q2PJkY8NKptkD0GtU/7eGlKWuDoSD4DI32TvqKFviiLHCAFhhtlRXie6K1Y3t8ifh22eFHoLNPkXrghPZII/XzHhw1fbFRVoivdX8qK0Tri6JHXYEdtD71BAbc646ivq5CvFOqfeB70LuvrDD8bwhN5DtR6IHTFusq9OA8VN5LPVCondCHJ2m0fRp8JlHdL83RAlvGJOXAt5io54PxTXvaCvGzJup9QmiBms16e+B5DG2nBu+4Wa+2EAXbo2C9QUcYeCZDv00B3QLtoB3qGatQfauBr1Ntz7QCnK5xoBB8aY1y9WkP1HnTDvP3IItQcycKoU3eV0fP5ACO7Gv3m3wDS2lYLvFQYoYa3Nd33L5ZYLr47psiFAIykfDsUiFmoar30J4ABcTN63TUQPVIuVOIGtFX7xM+AvNsnO01uLtCVAdkTwBjYf2U2w5kKcrNgQEUqF5I3IG9I8PFR4QKdPEnoq85UR7HN+hP6GD+CV/TVy604ecStEcv4KMlkXKIgb1Q4YjmZuPHvV+KvSf4bWaP2jr1oNH0gFZrhh9rtGKqI9CnW6JVPHA/9tEjCgkND5rbasjPeuF72+qIj0LhhywvEY6j/PoJ94i2Z3jgcFuQjDK8uGuviVz3grdXfUtJfEMLaedaM1gnLybPv78e2jysy6vxiLdfsKKtbNrrX06+rtsS5j1P/8EjW5vRufX0fre+Dg/muG/wcrlSh1fSgellvjXxzZOxsjrXmN+oG63Ks8acsQ9ZmftYL7pJki2KuwaYNh9xmedl//+RRwghhBBCCCGEEEIIIYQQQgghhBBCCCEY/gAuDkAoLCKZGwAAAABJRU5ErkJggg==" alt="">
+      </div>
+      <div class="links" align="center">
+        <a href="index.html">Home</a>
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+            <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z" />
+            <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z" />
+          </svg> Styled Page</a>
+        <a style="opacity:0.5" href="#"></a>
+        <a href="insta.html">Instagram</a>
+        <a onclick="location.href='about.html'" href="#" style="">About me</a>
+        <a style="opacity:0.5" href="#">Theme</a>
+      </div>
     </div>
-     <h2 id="animt">I'm a <span class="animate"></span></h2>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
-    <script src="main.js"></script>
-    <script>
-  var typed = new Typed('.animate', {
-    strings:["Student.","Programmer.","Web Designer.","Pro."],
-    typeSpeed:60,
-    backSpeed:60, 
-    loop:true
-  });
-</script>
-
-</script>
-    <script>
-      $(function(){
-            $('.icon').on('click', function(){
-                $('.bar-1').toggleClass('change-1');
-                $('.bar-2').toggleClass('change-2');
-                $('.links').toggleClass('display');
-            });
-        }); 
-    </script>
-    
+  </nav>
+  <div class="carda">
+    <div class="cardaa"></div>
+    <img src="apple.jpg">
+  </div>
+  <h2 id="animt">I'm a <span class="animate"></span></h2>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+  <script src="main.js"></script>
+  <script>
+    var typed = new Typed('.animate', {
+      strings: ["Student.", "Programmer.", "Web Designer.", "Pro."],
+      typeSpeed: 60,
+      backSpeed: 60,
+      loop: true
+    });
+  </script>
+  </script>
+  <script>
+    $(function() {
+      $('.icon').on('click', function() {
+        $('.bar-1').toggleClass('change-1');
+        $('.bar-2').toggleClass('change-2');
+        $('.links').toggleClass('display');
+      });
+    });
+  </script>
 </body>
 
 </html>
