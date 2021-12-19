@@ -37,3 +37,55 @@ const ChangeBackground = () => {
   var element = document.body;
   element.classList.toggle("light-mode");
 }
+String.prototype.equalsIgnoreCase = function (compareString) { return this.toUpperCase() === compareString.toUpperCase(); 
+};
+const searchbar = (key) => {
+  if(key.keyCode === 13){
+    document.getElementById("submitab").click()
+  }
+}
+const openPage = () => {
+  var input = document.getElementById("inputab").value
+  if(
+    input.equalsIgnoreCase("home")||
+    input.equalsIgnoreCase("home page")
+    )
+    window.location.href="https://anonymousparadox890.github.io/rahul-raj/index.html"
+  else if(
+  input.equalsIgnoreCase("apple")||
+  input.equalsIgnoreCase("apple style page")||
+  input.equalsIgnoreCase("apple styled page")||
+  input.equalsIgnoreCase("apple page")
+    )
+    window.location.href="https://anonymousparadox890.github.io/rahul-raj/apple.html"
+  else if(
+    input.equalsIgnoreCase("insta")||
+    input.equalsIgnoreCase("insta styled page")||
+    input.equalsIgnoreCase("insta style page")||
+    input.equalsIgnoreCase("insta page")||
+    input.equalsIgnoreCase("instagram") ||
+    input.equalsIgnoreCase("instagram styled page") ||
+    input.equalsIgnoreCase("instagram style page") ||
+    input.equalsIgnoreCase("instagram page")
+    )
+    window.location.href="https://anonymousparadox890.github.io/rahul-raj/insta.html"
+  else if(input==="")
+  {
+    Swal.fire('Atleast write something')
+  }
+  else{
+    Swal.fire({
+      title: "No page as <span style='color:#D14629'>"+input+"</span> found",
+      showDenyButton: true,
+      showCancelButton: false,
+      confirmButtonText: 'Show Pages Name List',
+      denyButtonText: `Cancel`,
+      footer:"<a style='color:lightblue' href=''> "+ new Date().toLocaleString('en-us', {  weekday: 'long' })+" "+ new Date().getHours() +":"+ new Date().getMinutes()+":"+ new Date().getSeconds()+"</a>",
+    }).then((result) => {
+      /* Read more about isConfirmed, isDenied below */
+      if (result.isConfirmed) {
+        Swal.fire('List\n <span style="color:A4DD86">"Home"\n"Apple"\n"Instagram"</span>', '', 'success')
+      }
+    })
+  }
+}
