@@ -40,11 +40,6 @@ const ChangeBackground = () => {
 String.prototype.equalsIgnoreCase = function(compareString) {
   return this.toUpperCase() === compareString.toUpperCase();
 };
-const searchbar = (key) => {
-  if (key.keyCode === 13) {
-    document.getElementById("submitab").click()
-  }
-}
 const openPage = () => {
   var input = document.getElementById("inputab").value
   if (
