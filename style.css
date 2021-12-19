@@ -401,12 +401,15 @@ nav {
   color:black;
 }
 #inputab:hover{
-  width:200px;
+  width:150px;
+  border-radius:5px;
 }
 #submitab{
   background:#23232D;
   border-radius:50%;
   color:white;
+  height:40px;
+  width:40px;
   outline: none;
   border:none;
   padding:5px;
@@ -417,7 +420,7 @@ nav {
   position: relative;
   top:30px;
   border-radius: 20px;
-  width:100%;
+  width:385px;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -427,7 +430,7 @@ nav {
   position: relative;
   left:2.5%;
   top:2%;
-  width:95%;
+  width:365px;
   height:480px;
   background: #363940;
   border-radius: 20px;
@@ -514,5 +517,5 @@ nav {
   border-radius:40px;
   position: fixed;
   top:0;
-  left:1;
+  left:20px;
 }
